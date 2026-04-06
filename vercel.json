@@ -1,18 +1,5 @@
 {
-  "version": 2,
-  "name": "pipeline-score",
-  "builds": [
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
+  "outputDirectory": "public",
   "headers": [
     {
       "source": "/(.*)",
